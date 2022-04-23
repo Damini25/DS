@@ -1,0 +1,49 @@
+{
+    "result": true,
+    "requestId": "432ec686-4000-4387-ac2c-27de0216326e",
+    "data": {
+        "orderId": "6764815898902790144",
+        "orderStatus": "ORDER_PROCESSING",
+        "orderAmount": 19.0,
+        "loginId": "9910031434",
+        "orderDate": 1612857794500,
+        "paymentStatusDetails": [
+            {
+                "paymentMode": "WALLET",
+                "pgStatus": "PG_SUCCESS",
+                "bankName": "NA",
+                "paymentStatus": "PAYMENT_SUCCESS",
+                "paymentDate": 1612857795137,
+                "paymentAmount": 19.0,
+                "pgId": "6764815901575610368",
+                "refundDetails": []
+            }
+        ],
+        "postingStatusDetails": [
+            {
+                "postingId": "6764815898919567360",
+                "lob": "PREPAID",
+                "productName": "Calls : Truly Unlimited | Data : 200 MB | SMS : 0",
+                "productId": "524",
+                "actualStatus": "POSTING_PENDING",
+                "trialsAttempted": 0,
+                "benefitAmount": 19.0,
+                "paymentAmount": 19.0,
+                "serviceInstance": "9027742336",
+                "accountNumber": "9027742336",
+                "circleId": 110,
+                "refunded": false,
+                "status": "POSTING_OPEN"
+            }
+        ],
+        "channelInfo": {
+            "channel": "app-ios-602",
+            "xbsyOs": "ios"
+        },
+        "pollingConfig": {
+            "start": 500,
+            "end": 20000,
+            "fixedDelay": 2000
+        }
+    }
+}

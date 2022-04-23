@@ -1,0 +1,54 @@
+{
+    "result": true,
+    "requestId": "e71e9b0c-3f36-498d-b056-e25a01cc7746",
+    "data": {
+        "orderId": "6764815785690136576",
+        "orderStatus": "ORDER_COMPLETE",
+        "orderAmount": 149.0,
+        "loginId": "7987517034",
+        "orderDate": 1612857767508,
+        "paymentStatusDetails": [
+            {
+                "paymentMode": "DEBIT_CARD",
+                "pgStatus": "PG_SUCCESS",
+                "bankName": "DEFAULT BANK",
+                "bankCode": "NA",
+                "cardNetwork": "RUPAY",
+                "paymentStatus": "PAYMENT_SUCCESS",
+                "paymentDate": 1612857768239,
+                "paymentAmount": 149.0,
+                "pgId": "6764815788757221376",
+                "refundDetails": []
+            }
+        ],
+        "postingStatusDetails": [
+            {
+                "postingId": "6764815785782411264",
+                "postingSystemId": "1323569409",
+                "lob": "PREPAID",
+                "productName": "Calls : Truly Unlimited | Data : 2GB | SMS : 300 | Validity : 28 days | Details : Free HelloTune on Wynk App",
+                "actualStatus": "POSTING_SUCCESS",
+                "trialsAttempted": 1,
+                "benefitAmount": 149.0,
+                "paymentAmount": 149.0,
+                "serviceInstance": "8827665917",
+                "circleId": 106,
+                "refunded": false,
+                "additionalInfo": {
+                    "couponAmount": "",
+                    "isNonDigitalStorePayment": "true"
+                },
+                "status": "POSTING_SUCCESS"
+            }
+        ],
+        "channelInfo": {
+            "channel": "app-android-5217",
+            "xbsyOs": "android"
+        },
+        "pollingConfig": {
+            "start": 500,
+            "end": 20000,
+            "fixedDelay": 2000
+        }
+    }
+}

@@ -1,0 +1,53 @@
+{
+    "result": true,
+    "requestId": "fee41278-726f-4034-a395-499e850c99bd",
+    "data": {
+        "orderId": "6764815888689037312",
+        "orderStatus": "ORDER_FAILED",
+        "orderAmount": 19.0,
+        "loginId": "9642461492",
+        "orderDate": 1612857792064,
+        "paymentStatusDetails": [
+            {
+                "paymentMode": "UPI",
+                "pgStatus": "PG_FAILED",
+                "bankName": "NA",
+                "paymentStatus": "PAYMENT_FAILED",
+                "paymentDate": 1612857792794,
+                "paymentAmount": 19.0,
+                "pgId": "6764815891748356096",
+                "errorCode": "GATEWAY_ERROR",
+                "errorDescription": "Payment processing failed due to error at bank or wallet gateway",
+                "refundDetails": []
+            }
+        ],
+        "postingStatusDetails": [
+            {
+                "postingId": "6764815888739368960",
+                "lob": "PREPAID",
+                "productName": "Calls : Truly Unlimited | Data : 200 MB | SMS : 0",
+                "actualStatus": "POSTING_PENDING",
+                "trialsAttempted": 0,
+                "benefitAmount": 19.0,
+                "paymentAmount": 19.0,
+                "serviceInstance": "9642461492",
+                "circleId": 104,
+                "refunded": false,
+                "additionalInfo": {
+                    "couponAmount": "",
+                    "isNonDigitalStorePayment": "true"
+                },
+                "status": "POSTING_OPEN"
+            }
+        ],
+        "channelInfo": {
+            "channel": "app-android-5217",
+            "xbsyOs": "android"
+        },
+        "pollingConfig": {
+            "start": 500,
+            "end": 20000,
+            "fixedDelay": 2000
+        }
+    }
+}

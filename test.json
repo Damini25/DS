@@ -1,0 +1,82 @@
+{
+    "result": true,
+    "data": {
+        "orderId": "6709714759165673472",
+        "orderStatus": "ORDER_COMPLETE",
+        "orderAmount": 219.0,
+         "orderDate": 1599720659057,
+        "paymentStatusDetails": [
+            {
+                "pgId": "6709714761803071488",
+                "paymentMode": "DEBIT_CARD",
+                "pgStatus": "PG_SUCCESS",
+                "paymentStatus": "PAYMENT_SUCCESS",
+                "paymentDate": 1599720659685,
+                "paymentAmount": 219.0,
+                "bankName": "KOTAK MAHINDRA BANK LIMITED",
+                "bankCode": "KKBK",
+                "errorCode": "E000",
+                "errorDescription": "No Error",
+                "refundDetails": []
+            }
+        ],
+        "postingStatusDetails": [
+            {
+                "lob": "PREPAID",
+                "actualStatus": "POSTING_PENDING",
+                "benefitAmount": 219.0,
+                "paymentAmount": 219.0,
+                "serviceInstance": "9892559938",
+                "circleId": 109,        
+                "status": "POSTING_PENDING"
+            }
+        ],
+        "channelInfo": {
+            "channelMeta":{   
+                "paymentPayload":{
+                    "order" : {
+                        "orderId" : "8743982345875457",        
+                        "lobName": "PREPAID",
+                        "serviceInstance" : "7358467469",
+                        "paymentAmount": 399,
+                        "circleId" : "-1",                      
+                        "benefitAmount" : 449,
+                        "saveCard": true,                        
+                        "emailId": "test@gmail.com"             
+                    },
+                    "lobData": {                                       
+                        "cafNumber": "AIRTELDUMMY4920390293"
+                    },
+                    "billSummary": {
+                        "transactionText": "Prepaid Recharge | 7358467469",
+                        "primaryHeading": "Unlimited Pack",
+                        "subHeading": ["2GB /Day"," 56 Days validity"],
+                        "paymentAmount" : 5541,
+                        "benefits" : [{"imageUrl" : "https://assets.airtel.in/static-assets/new-home/img/services-sim.svg",
+                                     "heading" : "dummy", "subHeading" : "dummy", "description" : ["dummy"]}]
+                    },
+                    "callBack": {
+                        "redirectionUrl": "https://www.airtel.in/pay/status",
+                        "cancelUrl" : "https://www.airtel.in",
+                        "temporaryData": {                                       
+                            "rechargeType": "SCR_Show",
+                            "rechargeCategory": "SCR_Show",
+                            "packageName": "Special Recharge - STV : Combo Show"
+                        },                                                            
+                        "persistentData": {                                             
+                            "rechargeType": "SCR_Show",
+                            "rechargeCategory": "SCR_Show",
+                            "packageName": "Special Recharge - STV : Combo Show"
+                        }
+                    }
+                }
+            }
+        },
+        "pollingConfig": {
+            "start": 500,
+            "end": 20000,
+            "fixedDelay": 2000, 
+            "interval": 2000
+        }
+    }
+}
