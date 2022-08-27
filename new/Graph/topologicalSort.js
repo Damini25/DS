@@ -4,6 +4,8 @@
  * T- O(N+E)
  * S- O(N+N) -O(N)
  */
+
+ // using DFS - maintain visited array and push into stack after all adj has been visited
 class Solution 
 {
     //Function to return list containing vertices in Topological order.
@@ -40,6 +42,42 @@ class Solution
         }
         stack.push(curr);
     }
-    
-    
 }
+
+// using BFS- Maintain inDegree, and push if inDegree is zero
+
+topoSort(V, adj)
+    {
+        // code here
+        const inDeg = new Array(V).fill(0);
+        
+        for(let i=0; i<adj.length; i++){
+            for(let j=0; j<adj[i].length; j++){
+                inDeg[adj[i][j]]++;
+            }
+        }
+        
+        let q = [];
+        
+        for(let i=0;i<V;i++){
+            if(inDeg[i]===0){
+                q.push(i);
+            }
+        }
+        let stack = [];
+        
+        while(q.length){
+            let top = q.shift();
+            
+            stack.push(top);
+            
+            for(let i=0; i<adj[top].length; i++){
+                inDeg[adj[top][i]]--;
+                 if(inDeg[adj[top][i]] === 0){
+                     q.push(adj[top][i]);
+                 }
+            }
+        }
+        
+        return stack;
+    }
